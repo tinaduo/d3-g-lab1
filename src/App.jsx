@@ -1,15 +1,19 @@
-import './index.css'
-
 function App() {
   return (
     <div className="app">
       <section id="content">
         <header>
           <div>
-            <h1> Shop Mart</h1>
+            <h1>Shop Mart</h1>
             <div>
-              <button className="icon-button"><span>&#128722;</span><span className="badge">3</span></button>
-              <button className="icon-button"><span>&#129293;</span></button>
+              <button className="icon-btn">
+                <span>&#129293;</span>
+                <span className="badge">3</span>
+              </button>
+              <button className="icon-btn">
+                <span>&#128722;</span>
+                <span className="badge">1</span>
+              </button>
             </div>
           </div>
 
@@ -17,12 +21,13 @@ function App() {
             <nav>
               <button>Home</button>
               <button>Catalog</button>
-              <button>All Products</button>
+              <button>All products</button>
               <button>Wishlist</button>
             </nav>
-
-            <form type="search" placeholder="search" />
-            <button type="button">Go</button>
+            <form>
+              <input type="search" placeholder="search" />
+              <button type="button">Go</button>
+            </form>
           </div>
         </header>
         <main>
@@ -47,37 +52,42 @@ function App() {
             <p className="pr-price">$25</p>
           </div>
           <div className="product">
-            <img src="https://i.pinimg.com/564x/e0/f1/c4/e0f1c44ee53082b561e9f02d5ad0e69f.jpg" alt="stuffed toy pig with a banana"/>
-            <p className="pr-name">clown shoes</p>
+            <img src="https://i.pinimg.com/564x/f3/87/35/f38735826c2108fc7a9da7a5167d9e0e.jpg" alt="stuffed toy pig with a banana"/>
+            <p className="pr-name">emoji shoes</p>
             <p className="pr-price">$25</p>
           </div>
         </main>
       </section>
       <footer>
-        <h3>Who we are</h3>
-        <ul>
-          <li><a href=''>About Us</a></li>
-          <li><a href=''>Contact</a></li>
-          <li><a href=''>Sell with us</a></li>
-        </ul>
+        <div>
+          <h3>Who we are</h3>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Sell with us</a></li>
+          </ul>
+        </div>
 
-        <h3>Our policies</h3>
-        <ul>
-          <li><a href=''>Return Policies</a></li>
-          <li><a href=''>Shipping Policies</a></li>
-          <li><a href=''>Terms of Service</a></li>
-        </ul>
+        <div>
+          <h3>Our policies</h3>
+          <ul>
+            <li><a href="">Return policies</a></li>
+            <li><a href="">Shipping policy</a></li>
+            <li><a href="">Terms of service</a></li>
+          </ul>
+        </div>
 
-        <h3>Our Product</h3>
-        <ul>
-          <li><a href=''>Home Page</a></li>
-          <li><a href=''>Search</a></li>
-          <li><a href=''>Catalog</a></li>
-        </ul>
+        <div>
+          <h3>Our products</h3>
+          <ul>
+            <li><a href="">Home page</a></li>
+            <li><a href="">Search</a></li>
+            <li><a href="">Catalog</a></li>
+          </ul>
+        </div>
       </footer>
-
     </div>
   );
 }
 
-export default App;
+export default App

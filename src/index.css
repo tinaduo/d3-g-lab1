@@ -296,7 +296,6 @@ input[type="search"] {
 button.icon-btn {
   position: relative;
 
-
   span.badge {
     position: absolute;
     box-sizing: content-box;
